@@ -1,11 +1,17 @@
 import { ReactNode } from "react";
 
-type BeforeAutoLayoutProps = {
+type BeforeAuthLayoutProps = {
   children: ReactNode;
+  modal: ReactNode;
 };
 
-function BeforeAutoLayout({ children }: BeforeAutoLayoutProps) {
-  return <div>{children}</div>;
+function BeforeAuthLayout({ children, modal }: BeforeAuthLayoutProps) {
+  return (
+    <div>
+      {children}
+      {modal}
+    </div>
+  );
 }
 
-export default BeforeAutoLayout;
+export default BeforeAuthLayout;

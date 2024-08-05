@@ -1,9 +1,13 @@
-import BasicInput from "../../_components/Modal/BasicInput";
-import ModalContainer from "../../_components/Modal/ModalContainer";
+import ModalContainer from "@/app/(beforeAuth)/_components/Modal/ModalContainer";
+import BasicInput from "@/app/(beforeAuth)/_components/Modal/BasicInput";
 
-function Page() {
+function Signup() {
   return (
-    <ModalContainer text='계정을 생성하세요.' authType='signup'>
+    <ModalContainer
+      text='계정을 생성하세요.'
+      authType='signup'
+      heightType='signupHeight'
+    >
       <BasicInput type='id' text='아이디' />
       <BasicInput type='name' text='닉네임' />
       <BasicInput type='password' text='비밀번호' />
@@ -26,4 +30,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default Signup;
