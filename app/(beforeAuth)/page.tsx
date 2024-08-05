@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EMO_LOGO from "../public/EMO_Icon.png";
+import EMO_LOGO from "../../public/EMO_Icon.png";
 
 const commonLinkStyle =
   "flex justify-center items-center w-[300px] h-10 rounded-[20px] text-base";
@@ -28,7 +28,7 @@ export default function Home() {
           이미 EMO에 가입하셨나요?
         </h3>
         <Link
-          href='/account/login'
+          href='/accounts/login'
           className={`${commonLinkStyle} text-blue border border-1 border-ivory hover:bg-ivory-hover`}
         >
           로그인
